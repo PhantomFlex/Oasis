@@ -77,10 +77,12 @@ color: #1D5222;
   color: #FFFFFF;
 }
 .button{
-  background-image: url("../images/button.png");
-  background-repeat:no-repeat;
-  background-position :center;
-  background-position: bottom;
+    background: url("../images/button.png") no-repeat bottom;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    text-underline: none;
+    border: none;
 }
 .flex2{
   background-image: url("../images/flex2.png");
