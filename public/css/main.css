@@ -1,5 +1,6 @@
 .image {
   background-image: url("../images/zaz12.png");
+  background-repeat: no-repeat;
   width: auto;
   height: 867px;
 }
@@ -26,7 +27,7 @@ padding-left: 95px;
 }
 .image1{
   background-image: url("../images/zaz13.png");
-  width: 100% !important;
+  width: 100% ;
   height: 772px;
   padding-top: 125px;
 }
@@ -76,14 +77,36 @@ color: #1D5222;
   text-align: center;
   color: #FFFFFF;
 }
-.button{
-    background: url("../images/button.png") no-repeat bottom;
-    width: 100px;
-    height: 50px;
-    border-radius: 5px;
-    text-underline: none;
-    border: none;
+a.green{
+border-radius: 4px;
+-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.08);
+-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.08);
+box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.08);
+color: #fff;
+display:block;
+width:200px;
+text-align: center;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 17px;
+padding: 8px 16px;
+margin: 20px auto;
+text-decoration: none;
+text-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+-webkit-transition: background-color 0.1s linear;
+-moz-transition: background-color 0.1s linear;
+-o-transition: background-color 0.1s linear;
+transition: background-color 0.1s linear;
 }
+a.green {
+background-color: rgb( 43, 153, 91 );
+border: 1px solid rgb( 33, 126, 74 );
+}
+
+a.green:hover {
+background-color: rgb( 75, 183, 141 );
+}
+
+
 .flex2{
   background-image: url("../images/flex2.png");
   width: 374px;
@@ -124,12 +147,91 @@ padding-bottom: 74px;
   text-align: center;
   color: #FFFFFF;
 }
+.present1{
+  background: #1D5222;
+  width: auto;
+  height: 500px;
+  opacity: 1;
+
+}
+.flex-container{
+display: flex;
+justify-content: center;
+justify-content: space-around;
+align-items: center;
+}
+.present2{
+  background: #1D5222;
+  width: auto;
+  height: 400px;
+  opacity: 1;
+}
+.flexcontext{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: normal;
+  text-align: center;
+  color: #FFFFFF;
+
+}
+
+
+.picin1{
+  background-image: url("../images/present1.png") ;
+  height:300px;
+  width: 325px;
+margin-top: 70px;
+
+}
+.picin2{
+  background-image: url("../images/present2.png") ;
+  height: 300px;
+  width: 325px;
+margin-top: 70px;
+
+}
+.picin3{
+  background-image: url("../images/present3.png") ;
+  height: 300px;
+  width: 325px;
+margin-top: 70px;
+}
+.picin4{
+  background-image: url("../images/present4.png") ;
+  height: 300px;
+  width: 325px;
+
+}
+.picin5{
+  background-image: url("../images/present5.png") ;
+  height: 300px;
+  width: 325px;
+
+}
+.picin6{
+  background-image: url("../images/present6.png") ;
+  height: 300px;
+  width: 325px;
+
+}
+
 .forest{
   background-image: url("../images/forest.png");
   height: 318px;
   weight:200px;
 }
-p {
+.carousel{
+  margin: 0 auto;
+  height: 681px;
+  width: 1021px;
+}
+.btn.btn-primary.btn-lg{
+  color: green;
+ background: green;
+}
+.p {
     color: #1D5222;
     font-size: 20px;
 }
