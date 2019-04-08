@@ -3,7 +3,9 @@
     background-repeat: no-repeat;
     width: 100%;
     height: 867px;
+    position: relative;
 }
+
 .pictext {
     font-family: El Messiri;
     font-style: normal;
@@ -11,8 +13,8 @@
     font-size: 60px;
     line-height: normal;
     color: #FFFFFF;
-    padding-top: 571px;
     padding-left: 95px;
+    position: absolute;top:530px;
 }
 
 .textunderpic {
@@ -30,7 +32,7 @@
     background: url("../images/zaz13.png") no-repeat;
     width: 100%;
     height: 772px;
-    padding-top: 125px;
+
 }
 
 .howwework {
@@ -48,27 +50,26 @@
     display: flex;
     justify-content: center;
     width: 100%;
-
 }
 
 .backfon {
     background-image: url("../images/backfon.png");
-    width: 374px;
-    height: 513px;
+    width: 304px;
+    height: 475px;
     opacity: 1;
     border: 3px solid transparent;
 }
 
 .flex1 {
     background-image: url("../images/flex1.png");
-    width: 374px;
-    height: 513px;
+    width: 304px;
+    height: 475px;
     border: 3px solid #07370C;
     margin: 10px;
 }
 
 .flex1text1 {
-    padding-top: 135px;
+    padding-top: 75px;
     padding-left: 51px;
     padding-right: 54px;
     padding-bottom: 74px;
@@ -113,14 +114,14 @@ a.green:hover {
 
 .flex2 {
     background-image: url("../images/flex2.png");
-    width: 374px;
-    height: 513px;
+    width: 304px;
+    height: 475px;
     border: 3px solid #07370C;
     margin: 10px;
 }
 
 .flex1text2 {
-    padding-top: 135px;
+    padding-top: 75px;
     padding-left: 51px;
     padding-right: 54px;
     padding-bottom: 74px;
@@ -135,14 +136,14 @@ a.green:hover {
 
 .flex3 {
     background-image: url("../images/flex33.png");
-    width: 374px;
-    height: 513px;
+    width: 304px;
+    height: 475px;
     border: 3px solid #07370C;
     margin: 10px;
 }
 
 .flex1text3 {
-    padding-top: 135px;
+    padding-top: 75px;
     padding-left: 51px;
     padding-right: 54px;
     padding-bottom: 74px;
@@ -192,6 +193,7 @@ a.green:hover {
     height: 300px;
     width: 325px;
     margin-top: 70px;
+        padding-top: 300px;
 
 }
 
@@ -200,6 +202,7 @@ a.green:hover {
     height: 300px;
     width: 325px;
     margin-top: 70px;
+        padding-top: 300px;
 
 }
 
@@ -208,12 +211,14 @@ a.green:hover {
     height: 300px;
     width: 325px;
     margin-top: 70px;
+        padding-top: 300px;
 }
 
 .picin4 {
     background-image: url("../images/present4.png");
     height: 300px;
     width: 325px;
+        padding-top: 300px;
 
 }
 
@@ -221,6 +226,7 @@ a.green:hover {
     background-image: url("../images/present5.png");
     height: 300px;
     width: 325px;
+        padding-top: 300px;
 
 }
 
@@ -228,16 +234,40 @@ a.green:hover {
     background-image: url("../images/present6.png");
     height: 300px;
     width: 325px;
+        padding-top: 300px;
 }
-
-.forest {
-    background-repeat: no-repeat;
+.picintext{
+  font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 64px;
+line-height: normal;
+text-align: center;
+color: #FFFFFF;
+height: 65px
 }
-
+.picintext1{
+  width: 100%;
+  height: 65px;
+}
+.textexmpl{
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 64px;
+line-height: normal;
+text-align: center;
+color: #1D5222;
+text-align: center;
+}
+.textexmpl1{
+  width: 100%;
+  height: 100px;
+}
 .carousel {
     margin: 0 auto;
     height: 681px;
-    width: 1021px;
+    width: auto;
 }
 
 .p {
@@ -301,4 +331,26 @@ a.green:hover {
 
 .address {
     margin: 0;
+}
+.end{
+  width: auto;
+  height: 185px;
+  background: #1D5222;
+}
+.zel{
+  font-family:Roboto ;
+font-size: 48px;
+line-height: normal;
+color: #FFFFFF;
+padding-top: 74px;
+padding-left: 25px;
+}
+.zeltel{
+  font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: normal;
+color: #FFFFFF;
+padding-left: 174px;
 }
