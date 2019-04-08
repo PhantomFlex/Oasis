@@ -1,13 +1,13 @@
 .image {
-    background-image: url("../images/zaz12.png");
-    background-repeat: no-repeat;
+    background: url("../images/zaz12.png") no-repeat;
+    background-size: 100%;
     width: 100%;
     height: 867px;
     position: relative;
 }
 
 .pictext {
-    font-family: El Messiri;
+    font-family: El Messiri, serif;
     font-style: normal;
     font-weight: normal;
     font-size: 60px;
@@ -32,7 +32,7 @@
     background: url("../images/zaz13.png") no-repeat;
     width: 100%;
     height: 772px;
-
+    background-size: 100%;
 }
 
 .howwework {
