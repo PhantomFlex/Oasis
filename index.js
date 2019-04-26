@@ -3,12 +3,6 @@ let express = require('express');
 let app = express();
 let fs = require('fs');
 const nodemailer = require("nodemailer");
-//let index = fs.readFile("public/index-menu.html");
-
-
-
-
-
 
 app.use(express.static('public'));
 

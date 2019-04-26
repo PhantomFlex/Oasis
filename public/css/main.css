@@ -1,4 +1,20 @@
-.image {
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, serif;
+    color: #1D5222;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.main-image {
     background: url("../images/zaz12.png") no-repeat;
     background-size: 100%;
     width: 100%;
@@ -6,50 +22,119 @@
     position: relative;
 }
 
-.pictext {
+.main-image-text {
     font-family: El Messiri, serif;
     font-style: normal;
-    font-weight: normal;
-    font-size: 60px;
+    font-weight: 200;
+    width: 100%;
+    font-size: 5em;
     line-height: normal;
-    color: #FFFFFF;
+    color: white;
     padding-left: 95px;
-    position: absolute;top:530px;
+    position: absolute;
+    top: 530px;
 }
 
-.textunderpic {
-    font-family: Roboto;
+.adaptive-image {
+    max-width: 100%;
+    height: auto;
+    display: block
+}
+
+.clumba-image {
+    z-index: 1;
+    position: absolute;
+    top: 115px;
+    left: 0;
+}
+
+.el-image {
+    z-index: 1;
+    position: absolute;
+    top: -55px;
+    right: 0;
+}
+
+.text-center-container {
+    font-family: Roboto, serif;
     font-style: normal;
-    font-weight: 300;
+    font-weight: normal;
     font-size: 34px;
     line-height: normal;
     text-align: center;
-    margin-top: 50px;
     color: #07370C;
+    padding: 0 10% 0 10%;
+    position: relative;
+    z-index: 2;
 }
 
-.image1 {
-    background: url("../images/zaz13.png") no-repeat;
-    width: 100%;
-    height: 772px;
-    background-size: 100%;
+.text-block {
+    padding-top: 40px;
 }
 
-.howwework {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 64px;
-    line-height: normal;
-    text-align: center;
-    color: #1D5222;
-
+.how-we-work {
+    padding-top: 300px;
+    font-family: Roboto, serif;
 }
 
 .check {
     display: flex;
     justify-content: center;
     width: 100%;
+}
+
+.send-form {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.text-white {
+    color: white;
+}
+
+.form {
+    background-color: #1D5222;
+}
+
+.name-input {
+    width: 300px;
+    height: 30px;
+    margin: 10px;
+    border: none;
+    color: white;
+    background-color: #1D5222;
+    border-bottom: 2px solid white;
+}
+
+::placeholder { /* Firefox, Chrome, Opera */
+    color: #cdcdcd;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: white;
+}
+
+.email-input {
+    background-color: #1D5222;
+    width: 300px;
+    height: 30px;
+    margin: 10px;
+    border: none;
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.about-input {
+    background-color: #1D5222;
+    color: white;
+    width: 620px;
+    height: 30px;
+    border: none;
+    border-bottom: 2px solid white;
 }
 
 .backfon {
@@ -82,7 +167,7 @@
     color: #FFFFFF;
 }
 
-a.green {
+*.green-btn {
     border-radius: 4px;
     -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.08);
     -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.08);
@@ -103,12 +188,12 @@ a.green {
     transition: background-color 0.1s linear;
 }
 
-a.green {
+*.green-btn {
     background-color: rgb(43, 153, 91);
     border: 1px solid rgb(33, 126, 74);
 }
 
-a.green:hover {
+*.green-btn:hover {
     background-color: rgb(75, 183, 141);
 }
 
@@ -143,11 +228,8 @@ a.green:hover {
 }
 
 .flex1text3 {
-    padding-top: 75px;
-    padding-left: 51px;
-    padding-right: 54px;
-    padding-bottom: 74px;
-    font-family: Roboto;
+    padding: 75px 54px 74px 51px;
+    font-family: Roboto, serif;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
@@ -156,20 +238,35 @@ a.green:hover {
     color: #FFFFFF;
 }
 
-.present1 {
+.offers {
     background: #1D5222;
     width: auto;
-    height: 500px;
+    height: 1000px;
     opacity: 1;
 
 }
 
 .flex-container {
+    width: 100%;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    align-content: space-between;
+    justify-content: center;
 }
 
+.portfolio-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio-container > div {
+    text-align: center;
+    font-size: 25px;
+    padding: 20px 100px 0 100px;
+}
 .present2 {
     background: #1D5222;
     width: auto;
@@ -177,15 +274,15 @@ a.green:hover {
     opacity: 1;
 }
 
-.flexcontext {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: normal;
+.el-text {
+    font-family: Roboto, serif;
+    font-size: 30px;
     text-align: center;
     color: #FFFFFF;
+}
 
+.flex-block {
+    width: 350px;
 }
 
 .picin1 {
@@ -193,8 +290,7 @@ a.green:hover {
     height: 300px;
     width: 325px;
     margin-top: 70px;
-        padding-top: 300px;
-
+    padding-top: 300px;
 }
 
 .picin2 {
@@ -202,7 +298,7 @@ a.green:hover {
     height: 300px;
     width: 325px;
     margin-top: 70px;
-        padding-top: 300px;
+    padding-top: 300px;
 
 }
 
@@ -211,14 +307,14 @@ a.green:hover {
     height: 300px;
     width: 325px;
     margin-top: 70px;
-        padding-top: 300px;
+    padding-top: 300px;
 }
 
 .picin4 {
     background-image: url("../images/present4.png");
     height: 300px;
     width: 325px;
-        padding-top: 300px;
+    padding-top: 300px;
 
 }
 
@@ -226,7 +322,7 @@ a.green:hover {
     background-image: url("../images/present5.png");
     height: 300px;
     width: 325px;
-        padding-top: 300px;
+    padding-top: 300px;
 
 }
 
@@ -234,36 +330,44 @@ a.green:hover {
     background-image: url("../images/present6.png");
     height: 300px;
     width: 325px;
-        padding-top: 300px;
+    padding-top: 300px;
 }
-.picintext{
-  font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 64px;
-line-height: normal;
-text-align: center;
-color: #FFFFFF;
-height: 65px
+
+.picintext {
+
 }
-.picintext1{
-  width: 100%;
-  height: 65px;
+
+.offers-title {
+    width: 100%;
+    font-family: Roboto, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: normal;
+    text-align: center;
+    color: #FFFFFF;
+    height: 65px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding-top: 20px;
 }
-.textexmpl{
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 64px;
-line-height: normal;
-text-align: center;
-color: #1D5222;
-text-align: center;
+
+.textexmpl {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: normal;
+    text-align: center;
+    color: #1D5222;
+    text-align: center;
 }
-.textexmpl1{
-  width: 100%;
-  height: 100px;
+
+.textexmpl1 {
+    width: 100%;
+    height: 100px;
 }
+
 .carousel {
     margin: 0 auto;
     height: 681px;
@@ -293,6 +397,18 @@ text-align: center;
 
 .section-title {
     color: #1D5222;
+    margin: 10px;
+    padding: 10px
+}
+
+.request-title {
+    padding: 10px 0 20px 0;
+}
+
+.request-text {
+    font-size: 1.5rem;
+    text-decoration: none;
+
 }
 
 .telephone {
@@ -332,25 +448,28 @@ text-align: center;
 .address {
     margin: 0;
 }
-.end{
-  width: auto;
-  height: 185px;
-  background: #1D5222;
+
+.end {
+    width: auto;
+    height: 185px;
+    background: #1D5222;
 }
-.zel{
-  font-family:Roboto ;
-font-size: 48px;
-line-height: normal;
-color: #FFFFFF;
-padding-top: 74px;
-padding-left: 25px;
+
+.zel {
+    font-family: Roboto;
+    font-size: 48px;
+    line-height: normal;
+    color: #FFFFFF;
+    padding-top: 74px;
+    padding-left: 25px;
 }
-.zeltel{
-  font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 24px;
-line-height: normal;
-color: #FFFFFF;
-padding-left: 174px;
+
+.zeltel {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: normal;
+    color: #FFFFFF;
+    padding-left: 174px;
 }
