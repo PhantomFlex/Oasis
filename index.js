@@ -37,7 +37,11 @@ app.get('/test', (request, response) => {
         };
         transporter.sendMail(mail, function (error, response) {
             if (error) {
-                response.send("Что то пошло не так при отправке формы (")
+                if (response) {
+                    console.log(error);
+                    console.log("response undef");
+                    response.send("Что то пошло не так при отправке формы (")
+                }
             } else {
                 response.send("OK")
             }
