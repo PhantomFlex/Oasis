@@ -20,29 +20,33 @@ app.get('/test', (request, response) => {
             pass: "YpRoWyjX"
         }
     });
-    let text = "Сообщение от сайта Oasis: ";
-    console.log(request.query);
-    if (request.query) {
-        text += request.query.name + " " + request.query.email + " " + request.query.about;
-    } else {
-        text += " Пустое сообшение";
-    }
-    let mail = {
-        from: "oasisgreen2bt@gmail.com",
-        to: "oasisgreen2bt@gmail.com",
-        subject: "Сообщение от Oasis. Новый клиент",
-        text: text,
-        html: text
-    };
-    transporter.sendMail(mail, function (error, response) {
-        if (error) {
-            response.send("Что то пошло не так при отправке формы (")
+    if (transporter) {
+        let text = "Сообщение от сайта Oasis: ";
+        console.log(request.query);
+        if (request.query) {
+            text += request.query.name + " " + request.query.email + " " + request.query.about;
         } else {
-            response.send("OK")
+            text += " Пустое сообшение";
         }
+        let mail = {
+            from: "oasisgreen2bt@gmail.com",
+            to: "oasisgreen2bt@gmail.com",
+            subject: "Сообщение от Oasis. Новый клиент",
+            text: text,
+            html: text
+        };
+        transporter.sendMail(mail, function (error, response) {
+            if (error) {
+                response.send("Что то пошло не так при отправке формы (")
+            } else {
+                response.send("OK")
+            }
 
-        transporter.close();
-    });
+            transporter.close();
+        });
+    } else {
+        console.log("Transporter not created.")
+    }
     response.sendFile(__dirname + "/public/index.html");
 
 });
