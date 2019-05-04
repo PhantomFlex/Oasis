@@ -21,7 +21,7 @@
 <body>
 <div class="header">
     <a class="logo" href="#">
-        <img src="images/logo.svg" width="324" height="34" alt="">
+        <img src="images/logo.svg" width="100%" alt="">
     </a>
 
     <div>
@@ -35,19 +35,21 @@
 
 </div>
 <div class="main-image">
-    <p class="main-image-text">Из городских каменных джунглей – к зеленому оазису на вашем участке.</p>
+    <img src="images/zaz12.png" width="100%">
+    <p class="main-image-text">Из городских каменных джунглей – <br>&nbsp;&nbsp;&nbsp;&nbsp;к зеленому оазису на вашем
+        участке.</p>
 </div>
 <div>
 
-    <div style="width: 100%; position: relative; margin-top: 150px">
+    <div style="width: 100%; position: relative; margin-top: 5%">
         <div class="text-center-container">
             <p class="text-block">Зеленый Оазис предоставляет услуги по комплексному ландшафтному
                 дизайну загородных участков в Санкт-Петербурге и ЛО.</p>
             <p class="text-block">Наша задача создать на вашем участке райский уголок,
                 способный восстановить душевное равновесие, подарить радость и покой.</p>
         </div>
-        <img class="clumba-image adaptive-image" src="images/clumba.png">
-        <img class="el-image adaptive-image" src="images/el.png" width="518" height="776">
+        <img class="clumba-image" src="images/clumba.png">
+        <img class="el-image" src="images/el.png" >
     </div>
 
     <h1 class="section-title text-center how-we-work">Как мы работаем?</h1>
@@ -77,15 +79,15 @@
         <p class="offers-title">Наши услуги</p>
         <div class="flex-container">
             <div class="flex-block">
-                <img src="images/present1.png">
+                <img class="offer-image" src="images/present1.png">
                 <p class="el-text">Укладка тротуарной плитки</p>
             </div>
             <div class="flex-block">
-                <img src="images/present2.png">
+                <img class="offer-image" src="images/present2.png">
                 <p class="el-text">Устройство газонов<br>(партерных и рулонных)</p>
             </div>
             <div class="flex-block">
-                <img src="images/present3.png">
+                <img class="offer-image" src="images/present3.png">
                 <p class="el-text">Установка бордюрного камня</p>
             </div>
 
@@ -94,15 +96,15 @@
             </div>
 
             <div class="flex-block">
-                <img src="images/present4.png">
+                <img class="offer-image" src="images/present4.png">
                 <p class="el-text">Посадка деревьев и кустарников</p>
             </div>
             <div class="flex-block">
-                <img src="images/present5.png">
+                <img class="offer-image" src="images/present5.png">
                 <p class="el-text">Устройство дренажной системы</p>
             </div>
             <div class="flex-block">
-                <img src="images/present6.png">
+                <img class="offer-image" src="images/present6.png">
                 <p class="el-text">Устройство набивного покрытия</p>
             </div>
         </div>
@@ -158,14 +160,14 @@
             </div>
             <input class="green-btn" type="submit" value="Отправить заявку"/>
         </form>-->
-    <div class="form" id="contact">
+    <div class="form">
         <h1 class="contact-title section-title text-center text-white">Контакты</h1>
         <!--<h3 class="text-center text-white request-title">Отправьте заявку на бесплатный 3D проект</h3>-->
         <p class="text-white text-center" style="font-size: 32px; margin-bottom: -30px;">Остались вопросы?</p>
         <p class="text-center text-white request-text"><br>
             Заполните форму ниже<br>
             и в ближайшее мы свяжемся с вами.</p>
-        <form class="send-form">
+        <form class="send-form" method="get" action="/test" id="contact">
             <input type="text" class="name-input" placeholder="Ваше имя" required name="name"
                    id="name"/>
             <input type="text" class="email-input" placeholder="Email или телефон" required name="email"
