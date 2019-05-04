@@ -8,10 +8,12 @@ const nodemailer = require("nodemailer");
 app.use(express.static('public'));
 
 app.get('/', (request, response) => {
+    console.log("User connected: " + request);
     response.sendFile(__dirname + "/public/index.html");
 });
 
 app.get('/test', (request, response) => {
+    console.log("User connected.");
     let transporter = nodemailer.createTransport({
         service: "Gmail",
         secure: true, // true for 465, false for other ports
@@ -35,17 +37,15 @@ app.get('/test', (request, response) => {
             text: text,
             html: text
         };
-        transporter.sendMail(mail, function (error, response) {
+        transporter.sendMail(mail, (error, response) => {
             if (error) {
+                console.log(error);
                 if (response) {
-                    console.log(error);
-                    console.log("response undef");
                     response.send("Что то пошло не так при отправке формы (")
                 }
             } else {
-                response.send("OK")
+                //response.send("OK")
             }
-
             transporter.close();
         });
     } else {
