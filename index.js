@@ -8,12 +8,10 @@ const nodemailer = require("nodemailer");
 app.use(express.static('public'));
 
 app.get('/', (request, response) => {
-    console.log("User connected: " + request);
     response.sendFile(__dirname + "/public/index.html");
 });
 
 app.get('/test', (request, response) => {
-    console.log("User connected.");
     let transporter = nodemailer.createTransport({
         service: "Gmail",
         secure: true, // true for 465, false for other ports
@@ -23,12 +21,12 @@ app.get('/test', (request, response) => {
         }
     });
     if (transporter) {
-        let text = "Сообщение от сайта Oasis: ";
+        let text = "";
         console.log(request.query);
-        if (request.query) {
-            text += request.query.name + " " + request.query.email + " " + request.query.about;
+        if (request.query && request.query.name && request.query.email && request.query.about) {
+            text += "<b>Имя:</b> " + request.query.name + "<br>" + "<b>Email или телефон:</b> " + request.query.email + "<br>" + "<b>Информация об участке:</b> " + request.query.about;
         } else {
-            text += " Пустое сообшение";
+            text += "Пустое сообшение";
         }
         let mail = {
             from: "oasisgreen2bt@gmail.com",
