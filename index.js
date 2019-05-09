@@ -25,27 +25,26 @@ app.get('/test', (request, response) => {
         console.log(request.query);
         if (request.query && request.query.name && request.query.email && request.query.about) {
             text += "<b>Имя:</b> " + request.query.name + "<br>" + "<b>Email или телефон:</b> " + request.query.email + "<br>" + "<b>Информация об участке:</b> " + request.query.about;
-        } else {
-            text += "Пустое сообшение";
-        }
-        let mail = {
-            from: "oasisgreen2bt@gmail.com",
-            to: "oasisgreen2bt@gmail.com",
-            subject: "Сообщение от Oasis. Новый клиент",
-            text: text,
-            html: text
-        };
-        transporter.sendMail(mail, (error, response) => {
-            if (error) {
-                console.log(error);
-                if (response) {
-                    response.send("Что то пошло не так при отправке формы (")
+            let mail = {
+                from: "oasisgreen2bt@gmail.com",
+                to: "oasisgreen2bt@gmail.com",
+                subject: "Сообщение от Oasis. Новый клиент",
+                text: text,
+                html: text
+            };
+            transporter.sendMail(mail, (error, response) => {
+                if (error) {
+                    console.log(error);
+                    if (response) {
+                        response.send("Что то пошло не так при отправке формы (")
+                    }
+                } else {
+                    //response.send("OK")
                 }
-            } else {
-                //response.send("OK")
-            }
-            transporter.close();
-        });
+                transporter.close();
+            });
+
+        }
     } else {
         console.log("Transporter not created.")
     }
